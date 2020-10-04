@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+r{
+font-family:Georgia;
+font-size:30px;
+background-color:#f1f1f1;
+padding:1px;
+
+}
+body{
+background-image:url("b.jpg");
+background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+
+
+<script>
+var x = document.getElementById("demo");
+
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else { 
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+  x.innerHTML = "Latitude: " + position.coords.latitude + 
+  "<br>Longitude: " + position.coords.longitude;
+}
+</script>
+</head>
+<body>
+<h1>PROFILE</h1>
+<r>
+Username:John wick<br>
+contact no:9876543210<br>
+e-mail:john09@gmail.com<br>
+</r>
+
+
+<p>Click the button to enable your location and our staff would be there asap!!</p>
+
+<button onclick="getLocation()">Try It</button>
+
+<p id="demo"></p>
+
+
+
+</body>
+</html>

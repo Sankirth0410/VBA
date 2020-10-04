@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Vehicle breakdown assistance</title>
+<link rel="stylesheet"  href=style.css>
+<style>
+.mySlides {display:none;
+}
+.center{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head>
+<body>
+  <div class="tab">
+  <button class="tablinks" onclick="location.href='vba.html'">Home</button>
+  <button class="tablinks" onclick="location.href='regform.html'">Sign up</button>
+  <button class="tablinks" onclick="location.href='contact.html'">Contact</button>
+  <div class="dropdown">
+  <button class="dropbtn">Features
+</button>
+  <div class="dropdown-content" style="right:0">
+<a href="#">Battery issue</a>
+<a href="#">Wheel change</a>
+<a href="#">Puncture (no spare)</a>
+<a href="#">Electrical problems</a>
+<a href="#">Charging electrical vehicles</a>
+<a href="#"> Clutch</a>
+<a href="#">Ignition</a>
+<a href="#">Cooling ,heating, ventilation and AC</a>
+</div>
+</div>
+</div>
+
+<img src="logo.jpg" height="150",width="150"align=left></img>
+
+
+<b><h1 id="rcorners1">VEHICLE BREAKDOWN ASSISTANCE</h1></b>
+</pre>
+
+ <div class="center" style="max-width:700px">
+  <img class="mySlides" src="man.jpg" style="width:100%">
+  <img class="mySlides" src="man1.jpg" style="width:100%">
+  <img class="mySlides" src="man2.jpg" style="width:100%">
+  <img class="mySlides" src="man3.jpg" style="width:100%">
+  <img class="mySlides" src="man4.jpg" style="width:100%">
+  <img class="mySlides" src="man5.jpg" style="width:100%">>
+  <img class="mySlides" src="services.jpg"style="width:100%">
+</div>
+
+<script>
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+    x[i].style.display = "none";  
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}    
+  x[myIndex-1].style.display = "block";  
+  setTimeout(carousel, 5000); // Change image every 5 seconds
+}
+</script>
+
+<pre>
+<p id="rcorners2">
+This website is going to be a good solution for the people who seek help in the remote
+locations with mechanical issues of their vehicle. Users of the On Road Vehicle 
+Breakdown Assistance will be the registered public and they will be getting connected 
+with the particular mechanic through the trustworthy On Road Vehicle Breakdown 
+Assistance (ORVBA) system. Because only the legally licensed and approved mechanics
+ are enlisted in the On Road Vehicle Breakdown Assistance website . Also they are under 
+monitoring by the  system ,and  the users can update  their feedback about the availed 
+service over here.</p>
+
+</body>
+</html>
